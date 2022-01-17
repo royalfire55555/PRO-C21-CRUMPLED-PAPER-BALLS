@@ -12,7 +12,6 @@ function preload() {
 function setup() {
 	createCanvas(window.innerWidth, 700);
 
-
 	engine = Engine.create();
 	world = engine.world;
 
@@ -22,7 +21,6 @@ function setup() {
 
 	leftWall = new Ground(1100, 650, 20, 120);
 	rightWall = new Ground(1300, 650, 20, 120);
-
 
 	Engine.run(engine);
 }
