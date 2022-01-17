@@ -7,7 +7,7 @@ class Ball {
         }
         this.body = Matter.Bodies.circle(x, y, r, ball_options);
         this.pos = this.body.position;
-        World.add(world, this.body)
+        World.add(world, this.body);
         this.r = r;
         this.force = 650;
     }
