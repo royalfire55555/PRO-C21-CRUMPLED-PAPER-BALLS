@@ -2,7 +2,7 @@ class Ball {
     constructor(x, y, r) {
         var ball_options = {
             restitution: 0.3,
-            friction : 0,
+            friction: 0,
             density: 1.2
         }
         this.body = Matter.Bodies.circle(x, y, r, ball_options);
@@ -20,6 +20,6 @@ class Ball {
     }
 
     throw() {
-        Body.applyForce(this.body, this.pos, {x: 1 * this.force, y: 1.2 * -this.force / 1.5})
+        Body.applyForce(this.body, this.pos, { x: 1 * this.force, y: 1.2 * -this.force / 1.5 })
     }
 }
